@@ -10,7 +10,27 @@ if(navbar) {
     });
 };
 
+const hamburger = document.getElementById("hamburger");
+const bar1 = document.getElementById("bar-1");
+const bar2 = document.getElementById("bar-2");
+const bar3 = document.getElementById("bar-3");
 
+const mobileMenu = document.getElementById("mobile-menu");
+
+hamburger.addEventListener('click', function () {
+
+    bar1.classList.toggle('-rotate-45');
+    bar1.classList.toggle('mt-2');
+    bar2.classList.toggle('hidden');
+    bar3.classList.toggle('rotate-45');
+    bar3.classList.toggle('mb-2');
+
+    mobileMenu.classList.toggle('opacity-0');
+    mobileMenu.classList.toggle('pointer-events-none');
+    mobileMenu.classList.toggle('opacity-100');
+    mobileMenu.classList.toggle('pointer-events-auto');
+
+});
 
 
 const favCard = document.querySelectorAll(".fav-card");

@@ -15,6 +15,18 @@
   --font-body: "Be Vietnam Pro", sans-serif;
 }
 
+#bar-1 {
+  transition: all ease-in-out .3s;
+}
+
+#bar-2 {
+  transition: all ease-in-out .3s;
+}
+
+#bar-3 {
+  transition: all ease-in-out .3s;
+}
+
 .dot {
   width: 10px;
   height: 10px;
