@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+@theme {
+  /* Brand colors (replace the estimates with the exact hex from DevTools) */
+  --color-kai-teal: #10A98F;
+  --color-kai-gold: #EBC13B;
+  --color-kai-cream: #F4F1EA;
+  --color-kai-ink: #1F2A28;
+
+  /* Derived shade for teal text on white backgrounds */
+  --color-kai-teal-dark: #0B7A68;
+
+  /* Fonts */
+  --font-heading: "Playfair Display", serif;
+  --font-body: "Be Vietnam Pro", sans-serif;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  background-color: var(--color-kai-gold);
+  border-radius: 9999px;
+  transition: width background-color ease-in-out .3s;
+}
+
+.dot.active {
+  width: 20px;
+  background-color: var(--color-kai-teal);
+}
+
+.menu-card {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  padding: 10px 12px;
+  border-radius: 10px;
+  background-color: white;
+  transition: all ease-in-out .3s;
+  cursor: pointer;
+}
+
+.menu-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 2px 4px 10px;
+}
