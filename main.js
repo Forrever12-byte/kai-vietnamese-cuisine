@@ -70,8 +70,12 @@ const menu = [
     {name: "P1. Deluxe Phở", nativeName: "Phở Đặc Biệt", description: "Short description.", price: 17, category: "phở", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg"},
     {name: "P1. Deluxe Phở", nativeName: "Phở Đặc Biệt", description: "Short description.", price: 17, category: "phở", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg"},
     {name: "P1. Deluxe Phở", nativeName: "Phở Đặc Biệt", description: "Short description.", price: 17, category: "phở", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg"}
-]
+];
 
+const categoryInfo = {
+  appetizers: { title: "Appetizers", line: "One short line." },
+  pho: { title: "Kai's Phở", line: "One short line." }
+};
 
 const categoryTabs = document.getElementById("categoryTabs");
 const categoryDescription = document.getElementById("categoryDescription");
@@ -80,9 +84,34 @@ const categoryHeading = document.getElementById("categoryHeading");
 
 const categoryLine = document.getElementById("categoryLine");
 
+const tabs = document.querySelectorAll("#categoryTabs [data-category]");
+
+tabs.forEach(function (tab) {
+
+    tab.addEventListener("click", function () {
+        const category = tab.dataset.category;
+        renderMenu(category);
+
+        tabs.forEach(function (t) {
+            t.classList.remove("bg-kai-teal");
+            t.classList.add("bg-white");
+        });
+
+        tab.classList.remove("bg-white");
+        tab.classList.add("bg-kai-teal");
+
+        categoryHeading.textContent = categoryInfo[category].title;
+        categoryLine.textContent = categoryInfo[category].line;
+    });
+});
+
 const menuGrid = document.getElementById("menu-grid");
 
-function renderMenu() {
+function renderMenu(category) {
+
+    const dishes = menu.filter(function (dish) {
+        return dish.category === category;
+    });
 
     for(let i = 0; i < menu.length; i++) {
 
