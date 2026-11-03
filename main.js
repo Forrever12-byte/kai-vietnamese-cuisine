@@ -94,10 +94,10 @@ tabs.forEach(function (tab) {
 
         tabs.forEach(function (t) {
             t.classList.remove("bg-kai-teal");
-            t.classList.add("bg-white");
+            t.classList.add("border");
         });
 
-        tab.classList.remove("bg-white");
+        tab.classList.remove("border");
         tab.classList.add("bg-kai-teal");
 
         categoryHeading.textContent = categoryInfo[category].title;
