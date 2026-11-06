@@ -28,7 +28,7 @@
             </div>
         </nav>
 
-        <div id="mobile-menu" class="bg-kai-teal-dark -mt-12 w-full pt-12 px-10 transition-all duration-300 ease-in-out opacity-0 pointer-events-none md:hidden">
+        <div id="mobile-menu" class="bg-kai-teal-dark -mt-12 w-full pt-12 px-10 transition-all duration-300 ease-in-out hidden">
 
             <ul class="border-t border-kai-gold/40 py-5 font-body flex flex-col gap-3">
                 <a href="#" class="block border border-kai-cream text-center py-1 rounded-lg text-white"><li>About</li></a>
@@ -252,36 +252,38 @@
                     <div class="font-heading text-2xl font-semibold">Taste of Vietnam</div>
                 </div>
 
-                <div id="categoryTabs" class="flex gap-2 overflow-x-auto p-2 border rounded-b-lg border-kai-gold sticky top-20 bg-kai-gold">
+                <div class="sticky top-20 bg-kai-cream">
+                    <div id="categoryTabs" class="flex gap-2 overflow-x-auto p-2 touch-pan-x [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border-white bg-kai-teal" data-category="appetizers">Appetizers</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border-kai-ink bg-kai-teal" data-category="appetizers">Appetizers</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="springRolls">Spring Rolls</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="springRolls">Spring Rolls</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="bao">BAO</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="bao">BAO</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="banhMi">BÁNH MÌ</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="banhMi">BÁNH MÌ</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="bun">BÚN CHẢ GIÒ</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="bun">BÚN CHẢ GIÒ</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="com">CƠM</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="com">CƠM</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="comChien">CƠM CHIÊN</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="comChien">CƠM CHIÊN</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="pho">KAI’S PHỞ</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="pho">KAI’S PHỞ</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="mi">MÌ</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="mi">MÌ</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="huTieu">HỦ TIẾU</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="huTieu">HỦ TIẾU</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="xao">MÓN XÀO</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="xao">MÓN XÀO</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="chay">THỨC ĂN CHAY</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="chay">THỨC ĂN CHAY</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="dessert">Dessert</div>
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="dessert">Dessert</div>
 
-                    <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-white border border-white" data-category="drinks">Drinks</div>
-                    
+                        <div class="text-xs text-nowrap px-3 py-1 rounded-full text-sm font-body text-kai-ink border border-kai-ink" data-category="drinks">Drinks</div>
+                        
+                    </div>
                 </div>
 
                 <div id="categoryDescription">

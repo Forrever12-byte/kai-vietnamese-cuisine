@@ -25,11 +25,7 @@ hamburger.addEventListener('click', function () {
     bar3.classList.toggle('rotate-45');
     bar3.classList.toggle('mb-2');
 
-    mobileMenu.classList.toggle('opacity-0');
-    mobileMenu.classList.toggle('pointer-events-none');
-    mobileMenu.classList.toggle('opacity-100');
-    mobileMenu.classList.toggle('pointer-events-auto');
-
+    mobileMenu.classList.toggle('hidden');
 });
 
 
