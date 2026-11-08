@@ -214,27 +214,6 @@ const categoryHeading = document.getElementById("categoryHeading");
 
 const categoryLine = document.getElementById("categoryLine");
 
-const tabs = document.querySelectorAll("#categoryTabs [data-category]");
-
-tabs.forEach(function (tab) {
-
-    tab.addEventListener("click", function () {
-        const category = tab.dataset.category;
-        renderMenu(category);
-
-        tabs.forEach(function (t) {
-            t.classList.remove("bg-kai-teal");
-            t.classList.add("border");
-        });
-
-        tab.classList.remove("border");
-        tab.classList.add("bg-kai-teal");
-
-        categoryHeading.textContent = categoryInfo[category].title;
-        categoryLine.textContent = categoryInfo[category].line;
-    });
-});
-
 const menuGrid = document.getElementById("menu-grid");
 
 function renderMenu(category) {
@@ -243,15 +222,24 @@ function renderMenu(category) {
         return dish.category === category;
     });
 
-    for(let i = 0; i < menu.length; i++) {
+    menuGrid.innerHTML = "";
 
-        const dish = menu[i];
+    for(let i = 0; i < dishes.length; i++) {
+
+        const dish = dishes[i];
+
+        const imageHTML = dish.img
+            ? `<img src="${dish.img}" alt="${dish.name}" class="w-full h-full object-cover">`: 
+            `<div class="w-full h-full flex flex-col items-center justify-center gap-1 bg-kai-cream border border-dashed border-kai-ink/20">
+                <span class="w-7 h-7 rounded-full bg-kai-gold"></span>
+                <span class="text-[10px] text-kai-ink">Photo soon</span>
+            </div>`;
 
         const menuCard = document.createElement("div");
         menuCard.className = "menu-card"
 
         menuCard.innerHTML = `
-        <div class="img-div rounded-lg overflow-hidden shrink-0 w-[90px] h-[90px]"><img src="${dish.img}" alt="${dish.name}" class="w-full h-full object-cover"></div>
+        <div class="img-div rounded-lg overflow-hidden shrink-0 w-[90px] h-[90px]">${imageHTML}</div>
 
         <div class="h-full font-body flex flex-col justify-between">
             <div class="flex flex-col gap-1">
@@ -272,4 +260,26 @@ function renderMenu(category) {
     };
 }
 
-renderMenu()
+const tabs = document.querySelectorAll("#categoryTabs [data-category]");
+
+tabs.forEach(function (tab) {
+
+    tab.addEventListener("click", function () {
+        const category = tab.dataset.category;
+
+        renderMenu(category);
+
+        tabs.forEach(function (t) {
+            t.classList.remove("bg-kai-teal");
+            t.classList.add("border");
+        });
+
+        tab.classList.remove("border");
+        tab.classList.add("bg-kai-teal");
+
+        categoryHeading.textContent = categoryInfo[category].title;
+        categoryLine.textContent = categoryInfo[category].line;
+    });
+});
+
+renderMenu("appetizers");
