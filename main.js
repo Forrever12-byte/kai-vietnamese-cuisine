@@ -109,34 +109,34 @@ const menu = [
   { name: "D7. Huế Style Noodle Soup", nativeName: "Bún Bò Huế", description: "Traditional spicy beef and pork noodle soup with bean sprouts and fresh herbs.", price: 16, category: "bun", img: "" },
 
   // CƠM
-  { name: "C1. Grilled Pork & Fried Eggs", nativeName: "Sườn Nướng & ốp la", description: "", price: 15, category: "com", img: "" },
-  { name: "C2. Grilled Chicken & Fried Eggs", nativeName: "Gà Nướng & ốp la", description: "", price: 15, category: "com", img: "" },
-  { name: "C3. Lemongrass Beef", nativeName: "Bò Nướng Sả", description: "", price: 15, category: "com", img: "" },
-  { name: "C4. Lemongrass Pork", nativeName: "Heo Nướng Sả", description: "", price: 15, category: "com", img: "" },
-  { name: "C5. Shaken Ribeyes", nativeName: "Bò Lúc Lắc", description: "Ribeye cubes sautéed with onion, bell peppers, jalapeno and tomato in garlic ginger soy sauce.", price: 20, category: "com", img: "" },
+  { name: "C1. Grilled Pork & Fried Eggs", nativeName: "Sườn Nướng & ốp la", description: "", price: 15, category: "com", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334276/Grilled_Pork_Fried_Eggs_brq0jy.webp" },
+  { name: "C2. Grilled Chicken & Fried Eggs", nativeName: "Gà Nướng & ốp la", description: "", price: 15, category: "com", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334274/Grilled_Chicken_Fried_Egg_vgveur.jpg" },
+  { name: "C3. Lemongrass Beef", nativeName: "Bò Nướng Sả", description: "", price: 15, category: "com", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334277/Lemongrass_Beef_vuoebv.jpg" },
+  { name: "C4. Lemongrass Pork", nativeName: "Heo Nướng Sả", description: "", price: 15, category: "com", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334278/Lemongrass_Pork_yqtlw1.jpg" },
+  { name: "C5. Shaken Ribeyes", nativeName: "Bò Lúc Lắc", description: "Ribeye cubes sautéed with onion, bell peppers, jalapeno and tomato in garlic ginger soy sauce.", price: 20, category: "com", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334282/Shaken_Ribeyes_bjecne.jpg" },
 
   // CƠM CHIÊN
-  { name: "C6. Chicken", nativeName: "Gà", description: "", price: 12, category: "comChien", img: "" },
+  { name: "C6. Chicken", nativeName: "Gà", description: "", price: 12, category: "comChien", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334272/Chicken_dzo9xf.webp" },
   { name: "C7. Pork", nativeName: "Heo", description: "", price: 12, category: "comChien", img: "" },
-  { name: "C8. Beef", nativeName: "Bò", description: "", price: 13, category: "comChien", img: "" },
-  { name: "C9. Shrimp", nativeName: "Tôm", description: "", price: 14, category: "comChien", img: "" },
-  { name: "C10. Kai Special", nativeName: "Cơm Chiên Dương Châu", description: "Combination of all meats and Chinese sausage.", price: 16, category: "comChien", img: "" },
+  { name: "C8. Beef", nativeName: "Bò", description: "", price: 13, category: "comChien", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334268/Beef_llcb6w.jpg" },
+  { name: "C9. Shrimp", nativeName: "Tôm", description: "", price: 14, category: "comChien", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334283/Shrimp_xfspgw.jpg" },
+  { name: "C10. Kai Special", nativeName: "Cơm Chiên Dương Châu", description: "Combination of all meats and Chinese sausage.", price: 16, category: "comChien", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334276/Kai_Special_lrb61d.jpg" },
 
   // KAI’S PHỞ
   { name: "P1. Deluxe Phở", nativeName: "Phở Đặc Biệt", description: "Eye round and brisket steak with meatballs.", price: 17, category: "pho", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg" },
   { name: "P2. Eye Round Steak", nativeName: "Phở Tái", description: "", price: 15, category: "pho", img: "" },
-  { name: "P3. Brisket Steak", nativeName: "Phở Chín", description: "", price: 15, category: "pho", img: "" },
-  { name: "P4. Meatballs", nativeName: "Phở Bò Viên", description: "", price: 15, category: "pho", img: "" },
-  { name: "P5. Phở Satế", nativeName: "Phở Satế", description: "Creamy, spicy beef broth with wide rice noodles, eye round steak, tomato, cucumbers, onions and peanuts.", price: 16, category: "pho", img: "" },
-  { name: "P6. Chicken Noodle Soup", nativeName: "Phở Gà", description: "Chicken broth rice noodle soup with white meat chicken, green onion, fried onion, fried garlic and lettuce.", price: 15, category: "pho", img: "" },
+  { name: "P3. Brisket Steak", nativeName: "Phở Chín", description: "", price: 15, category: "pho", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334270/Brisket_Steak_yewx8k.jpg" },
+  { name: "P4. Meatballs", nativeName: "Phở Bò Viên", description: "", price: 15, category: "pho", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334280/Meatballs_y1qb5i.webp" },
+  { name: "P5. Phở Satế", nativeName: "Phở Satế", description: "Creamy, spicy beef broth with wide rice noodles, eye round steak, tomato, cucumbers, onions and peanuts.", price: 16, category: "pho", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334281/Ph%E1%BB%9F_Sat%E1%BA%BF_bmrrva.jpg" },
+  { name: "P6. Chicken Noodle Soup", nativeName: "Phở Gà", description: "Chicken broth rice noodle soup with white meat chicken, green onion, fried onion, fried garlic and lettuce.", price: 15, category: "pho", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334271/Chicken_Noodle_Soup_m7h6hc.jpg" },
 
   // MÌ
-  { name: "M1. Wonton", nativeName: "Hoành Thánh", description: "Pork-filled wontons and BBQ pork.", price: 15, category: "mi", img: "" },
+  { name: "M1. Wonton", nativeName: "Hoành Thánh", description: "Pork-filled wontons and BBQ pork.", price: 15, category: "mi", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334261/M%C3%8C_zqjhxb.webp" },
   { name: "M2. Chicken", nativeName: "Gà", description: "", price: 15, category: "mi", img: "" },
-  { name: "M3. Seafood", nativeName: "Hải Sản", description: "Shrimp, calamari and fishcakes.", price: 16, category: "mi", img: "" },
-  { name: "M4. Deluxe", nativeName: "Thập Cẩm", description: "Pork, shrimp, calamari, fishcakes and fried wonton.", price: 16, category: "mi", img: "" },
+  { name: "M3. Seafood", nativeName: "Hải Sản", description: "Shrimp, calamari and fishcakes.", price: 16, category: "mi", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334261/Seafood_vybyts.jpg" },
+  { name: "M4. Deluxe", nativeName: "Thập Cẩm", description: "Pork, shrimp, calamari, fishcakes and fried wonton.", price: 16, category: "mi", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334261/Deluxe_jr5qif.jpg" },
   { name: "M5. House Dry Noodle Soup", nativeName: "Mì Khô Thập Cẩm", description: "", price: 16, category: "mi", img: "" },
-  { name: "M6. Duck Soup", nativeName: "Vịt Tiềm", description: "Duck broth soup with a whole duck leg quarter, egg noodles, mushrooms, yu choy, fried onion, green onions and fried garlic.", price: 18, category: "mi", img: "" },
+  { name: "M6. Duck Soup", nativeName: "Vịt Tiềm", description: "Duck broth soup with a whole duck leg quarter, egg noodles, mushrooms, yu choy, fried onion, green onions and fried garlic.", price: 18, category: "mi", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334260/Duck_Soup_rdi88f.jpg" },
 
   // HỦ TIẾU
   { name: "H1. Seafood Hủ Tiếu", nativeName: "Hải Sản", description: "Shrimp, calamari and fishcakes.", price: 16, category: "huTieu", img: "" },
@@ -174,20 +174,20 @@ const menu = [
   { name: "Custard Bun", nativeName: "", description: "4 sweet steamed buns with egg custard filling.", price: 8, category: "dessert", img: "" },
 
   // DRINKS
-  { name: "U1. Soda", nativeName: "", description: "Coke, Diet Coke, Sprite, Pink Lemonade, Dr. Pepper, Diet Dr. Pepper, Club soda, Sweet Tea or Iced Tea. Free refills.", price: 3, category: "drinks", img: "" },
-  { name: "U2. Vietnamese Milk Iced Coffee", nativeName: "", description: "", price: 6, category: "drinks", img: "" },
-  { name: "U3. Vietnamese Black Iced Coffee", nativeName: "", description: "", price: 5, category: "drinks", img: "" },
-  { name: "U4. Soya Milk", nativeName: "", description: "", price: 4, category: "drinks", img: "" },
-  { name: "U5. Young Coconut", nativeName: "", description: "", price: 6, category: "drinks", img: "" },
-  { name: "U6. Fresh Lemonade", nativeName: "", description: "", price: 4, category: "drinks", img: "" },
-  { name: "U7. Passion Fruit Lemonade", nativeName: "", description: "", price: 4, category: "drinks", img: "" },
-  { name: "U8. Winter Melon Tea", nativeName: "", description: "", price: 4, category: "drinks", img: "" },
-  { name: "U9. Passion Fruit Tea", nativeName: "", description: "", price: 4, category: "drinks", img: "" },
-  { name: "U10. Thai Tea", nativeName: "", description: "", price: 5, category: "drinks", img: "" },
-  { name: "U11. Matcha Milk Tea", nativeName: "", description: "", price: 6, category: "drinks", img: "" },
-  { name: "U12. Golden Milk Tea", nativeName: "", description: "", price: 6, category: "drinks", img: "" },
-  { name: "U13. Taro Milk Tea", nativeName: "", description: "", price: 6, category: "drinks", img: "" },
-  { name: "Milk Tea", nativeName: "", description: "Choice of regular boba, crystal boba, strawberry popping boba, coffee jelly, lychee jelly or mixed fruit jelly.", price: 6, category: "drinks", img: "" }
+  { name: "U1. Soda", nativeName: "", description: "Coke, Diet Coke, Sprite, Pink Lemonade, Dr. Pepper, Diet Dr. Pepper, Club soda, Sweet Tea or Iced Tea. Free refills.", price: 3, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334293/Soda_nswog0.jpg" },
+  { name: "U2. Vietnamese Milk Iced Coffee", nativeName: "", description: "", price: 6, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334298/Vietnamese_Milk_Iced_Coffee_zl18ou.jpg" },
+  { name: "U3. Vietnamese Black Iced Coffee", nativeName: "", description: "", price: 5, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334297/Vietnamese_Black_Iced_Coffee_y3obka.jpg" },
+  { name: "U4. Soya Milk", nativeName: "", description: "", price: 4, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334293/Soya_Milk_rxutdz.webp" },
+  { name: "U5. Young Coconut", nativeName: "", description: "", price: 6, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334300/Young_Coconut_b7hxss.jpg" },
+  { name: "U6. Fresh Lemonade", nativeName: "", description: "", price: 4, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334285/Fresh_Lemonade_keppb9.jpg" },
+  { name: "U7. Passion Fruit Lemonade", nativeName: "", description: "", price: 4, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334290/Passion_Fruit_Lemonade_el0e0i.jpg" },
+  { name: "U8. Winter Melon Tea", nativeName: "", description: "", price: 4, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334299/Winter_Melon_Tea_uc9xpu.jpg" },
+  { name: "U9. Passion Fruit Tea", nativeName: "", description: "", price: 4, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334292/Passion_Fruit_Tea_lippbt.jpg" },
+  { name: "U10. Thai Tea", nativeName: "", description: "", price: 5, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334296/Thai_Tea_yzpeil.jpg" },
+  { name: "U11. Matcha Milk Tea", nativeName: "", description: "", price: 6, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334288/Matcha_Milk_Tea_rn8hfh.jpg" },
+  { name: "U12. Golden Milk Tea", nativeName: "", description: "", price: 6, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334286/Golden_Milk_Tea_sqhdbc.jpg" },
+  { name: "U13. Taro Milk Tea", nativeName: "", description: "", price: 6, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334295/Taro_Milk_Tea_jfhbbu.webp" },
+  { name: "Milk Tea", nativeName: "", description: "Choice of regular boba, crystal boba, strawberry popping boba, coffee jelly, lychee jelly or mixed fruit jelly.", price: 6, category: "drinks", img: "https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334289/Milk_Tea_iceolu.jpg" }
 ];
 
 const categoryInfo = {
