@@ -42,11 +42,23 @@
 
     <main>
 
-        <section class="relative h-[60vh] bg-[url(https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg)] bg-cover flex items-end justify-center">
+        <section class="relative h-[60vh] flex items-end justify-center overflow-hidden">
 
-            <div class="absolute top-0 left-0 w-full h-full bg-kai-ink/70"></div>
+            <div id="hero-slider" class="absolute inset-0" role="region" aria-label="Featured dishes" aria-roledescription="carousel">
+                <div id="hero-slides" class="absolute inset-0">
+                    <img class="hero-slide is-active" src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg" alt="A bowl of Vietnamese pho" aria-hidden="false">
+                    <img class="hero-slide" src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793701974/Vietnamese_Egg_Rolls_n9hgam.avif" alt="Vietnamese egg rolls" aria-hidden="true">
+                    <img class="hero-slide" src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793689353/Inside_xdfjtk.webp" alt="The interior of KAI Vietnamese Cuisine" aria-hidden="true">
+                </div>
+                <div class="absolute inset-0 bg-kai-ink/70"></div>
+                <div class="hero-controls hidden absolute right-4 top-32 z-20 md:flex items-center gap-2">
+                    <button id="hero-prev" class="hero-control" type="button" aria-label="Previous featured image">&#8592;</button>
+                    <div id="hero-dots" class="flex items-center gap-2" aria-label="Choose a featured image"></div>
+                    <button id="hero-next" class="hero-control" type="button" aria-label="Next featured image">&#8594;</button>
+                </div>
+            </div>
 
-            <div class="z-1 w-[90%] flex flex-col gap-5 absolute -bottom-15">
+            <div class="z-10 w-[90%] flex flex-col gap-5 absolute -bottom-15">
 
                 <div class="w-fit py-1 px-3 bg-kai-gold rounded-full text-sm">Vietnamese cuisine - Downtown Tulsa</div>
                 <h1 class="font-heading text-2xl font-bold text-kai-cream">Broth simmered for hours. <br>Flavor in every bowl.</h1>
@@ -86,10 +98,10 @@
             </div>
 
             <div class="flex flex-col gap-3">
-                <div id="fav-row" class="flex gap-2 overflow-x-auto snap-x snap-mandatory">
+                <div id="fav-row" class="flex gap-2 overflow-x-auto snap-x snap-mandatory touch-pan-x [scrollbar-width:none] [&::-webkit-scrollbar]:hidden">
 
-                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border rounded-lg overflow-hidden bg-white pb-3 snap-start">
-                        <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg" alt="" class="h-30 object-cover">
+                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border border-kai-ink/50 rounded-lg overflow-hidden bg-white pb-3 snap-start">
+                        <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg" alt="Deluxe Phở" class="h-30 object-cover">
 
                         <div class="w-full px-2 flex flex-col gap-2">
                             <div class="flex flex-col">
@@ -97,12 +109,12 @@
                                 <span class="text-xs font-body">Eye round and brisket steak with meatballs.</span>
                             </div>
 
-                            <span>$5</span>
+                            <span>$17</span>
                         </div>
                     </div>
 
-                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border rounded-lg overflow-hidden bg-white pb-3 snap-start">
-                        <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793701974/Vietnamese_Egg_Rolls_n9hgam.avif" alt="" class="h-30 object-cover">
+                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border border-kai-ink/50 rounded-lg overflow-hidden bg-white pb-3 snap-start">
+                        <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793701974/Vietnamese_Egg_Rolls_n9hgam.avif" alt="Vietnamese Egg Rolls" class="h-30 object-cover">
 
                         <div class="w-full px-2 flex flex-col gap-2">
                             <div class="flex flex-col">
@@ -114,8 +126,8 @@
                         </div>
                     </div>
 
-                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border rounded-lg overflow-hidden bg-white pb-3 snap-start">
-                        <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793701974/Phu_Quoc_Wings_l5pm9y.jpg" alt="" class="h-30 object-cover">
+                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border border-kai-ink/50 rounded-lg overflow-hidden bg-white pb-3 snap-start">
+                        <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1793701974/Phu_Quoc_Wings_l5pm9y.jpg" alt="Phu Quoc Wings" class="h-30 object-cover">
 
                         <div class="w-full px-2 flex flex-col gap-2">
                             <div class="flex flex-col">
@@ -127,16 +139,16 @@
                         </div>
                     </div>
 
-                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border rounded-lg overflow-hidden bg-white pb-3 snap-start">
-                        <img src="" alt="" class="h-30 object-cover">
+                    <div class="fav-card flex flex-col gap-2 shrink-0 w-[60%] border border-kai-ink/50 rounded-lg overflow-hidden bg-white pb-3 snap-start">
+                        <img src="https://res.cloudinary.com/pnfbjbp5/image/upload/v1794334276/Kai_Special_lrb61d.jpg" alt="Kai Special" class="h-30 object-cover">
 
                         <div class="w-full px-2 flex flex-col gap-2">
                             <div class="flex flex-col">
-                                <span class="font-heading">Deluxe Phở</span>
-                                <span class="text-xs font-body">Eye round and brisket steak with meatballs.</span>
+                                <span class="font-heading">Kai Special</span>
+                                <span class="text-xs font-body">Combination of all meats and Chinese sausage.</span>
                             </div>
 
-                            <span>$17</span>
+                            <span>$16</span>
                         </div>
                     </div>
 

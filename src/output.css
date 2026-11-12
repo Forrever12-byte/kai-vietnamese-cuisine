@@ -199,14 +199,17 @@
   .sticky {
     position: sticky;
   }
-  .-top-20 {
-    top: calc(var(--spacing) * -20);
-  }
-  .top-0 {
-    top: 0px;
+  .inset-0 {
+    inset: 0px;
   }
   .top-20 {
     top: calc(var(--spacing) * 20);
+  }
+  .top-32 {
+    top: calc(var(--spacing) * 32);
+  }
+  .right-4 {
+    right: calc(var(--spacing) * 4);
   }
   .-bottom-15 {
     bottom: calc(var(--spacing) * -15);
@@ -214,17 +217,14 @@
   .bottom-3 {
     bottom: calc(var(--spacing) * 3);
   }
-  .left-0 {
-    left: 0px;
-  }
   .left-3 {
     left: calc(var(--spacing) * 3);
   }
-  .z-1 {
-    z-index: 1;
-  }
   .z-10 {
     z-index: 10;
+  }
+  .z-20 {
+    z-index: 20;
   }
   .col-span-2 {
     grid-column: span 2 / span 2;
@@ -270,9 +270,6 @@
   }
   .hidden {
     display: none;
-  }
-  .table {
-    display: table;
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
@@ -328,14 +325,8 @@
   .w-full {
     width: 100%;
   }
-  .flex-shrink {
-    flex-shrink: 1;
-  }
   .shrink-0 {
     flex-shrink: 0;
-  }
-  .border-collapse {
-    border-collapse: collapse;
   }
   .-rotate-45 {
     rotate: calc(45deg * -1);
@@ -343,15 +334,9 @@
   .rotate-45 {
     rotate: 45deg;
   }
-  .transform {
-    transform: var(--tw-rotate-x,) var(--tw-rotate-y,) var(--tw-rotate-z,) var(--tw-skew-x,) var(--tw-skew-y,);
-  }
   .touch-pan-x {
     --tw-pan-x: pan-x;
     touch-action: var(--tw-pan-x,) var(--tw-pan-y,) var(--tw-pinch-zoom,);
-  }
-  .resize {
-    resize: both;
   }
   .snap-x {
     scroll-snap-type: x var(--tw-scroll-snap-strictness);
@@ -435,9 +420,6 @@
   .border-kai-cream {
     border-color: var(--color-kai-cream);
   }
-  .border-kai-gold {
-    border-color: var(--color-kai-gold);
-  }
   .border-kai-gold\/40 {
     border-color: color-mix(in srgb, #EBC13B 40%, transparent);
     @supports (color: color-mix(in lab, red, red)) {
@@ -465,8 +447,11 @@
       border-color: color-mix(in oklab, var(--color-kai-ink) 30%, transparent);
     }
   }
-  .bg-black {
-    background-color: var(--color-black);
+  .border-kai-ink\/50 {
+    border-color: color-mix(in srgb, #1F2A28 50%, transparent);
+    @supports (color: color-mix(in lab, red, red)) {
+      border-color: color-mix(in oklab, var(--color-kai-ink) 50%, transparent);
+    }
   }
   .bg-black\/20 {
     background-color: color-mix(in srgb, #000 20%, transparent);
@@ -498,35 +483,11 @@
   .bg-white {
     background-color: var(--color-white);
   }
-  .bg-\[url\(https\:\/\/res\.cloudinary\.com\/pnfbjbp5\/image\/upload\/v1793140709\/bowl_of_pho_khghi5\.jpg\)\] {
-    background-image: url(https://res.cloudinary.com/pnfbjbp5/image/upload/v1793140709/bowl_of_pho_khghi5.jpg);
-  }
-  .bg-cover {
-    background-size: cover;
-  }
   .object-cover {
     object-fit: cover;
   }
-  .object-\[25\%\] {
-    object-position: 25%;
-  }
   .object-\[25\%_65\%\] {
     object-position: 25% 65%;
-  }
-  .object-\[25\%_75\%\] {
-    object-position: 25% 75%;
-  }
-  .object-\[25\%_75\] {
-    object-position: 25% 75;
-  }
-  .object-\[25\%_\] {
-    object-position: 25% ;
-  }
-  .object-bottom {
-    object-position: bottom;
-  }
-  .object-center {
-    object-position: center;
   }
   .p-1 {
     padding: var(--spacing);
@@ -629,9 +590,6 @@
   .text-nowrap {
     text-wrap: nowrap;
   }
-  .text-wrap {
-    text-wrap: wrap;
-  }
   .text-kai-cream {
     color: var(--color-kai-cream);
   }
@@ -662,17 +620,9 @@
   .text-white {
     color: var(--color-white);
   }
-  .underline {
-    text-decoration-line: underline;
-  }
   .outline {
     outline-style: var(--tw-outline-style);
     outline-width: 1px;
-  }
-  .transition {
-    transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, content-visibility, overlay, pointer-events;
-    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
-    transition-duration: var(--tw-duration, var(--default-transition-duration));
   }
   .transition-all {
     transition-property: all;
@@ -686,6 +636,14 @@
   .ease-in-out {
     --tw-ease: var(--ease-in-out);
     transition-timing-function: var(--ease-in-out);
+  }
+  @media (width >= 48rem) {
+    .md\:absolute {
+      position: absolute;
+    }
+    .md\:flex {
+      display: flex;
+    }
   }
   .\[\&\:\:-webkit-scrollbar\]\:hidden::-webkit-scrollbar {
     display: none;
@@ -725,25 +683,77 @@
   transform: translateY(-5px);
   box-shadow: 2px 4px 10px;
 }
-@property --tw-rotate-x {
-  syntax: "*";
-  inherits: false;
+html {
+  scroll-behavior: smooth;
 }
-@property --tw-rotate-y {
-  syntax: "*";
-  inherits: false;
+button, a, .fav-card, .menu-card {
+  transition: color 200ms ease, background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease, transform 200ms ease;
 }
-@property --tw-rotate-z {
-  syntax: "*";
-  inherits: false;
+.fav-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgb(31 42 40 / 12%);
 }
-@property --tw-skew-x {
-  syntax: "*";
-  inherits: false;
+.hero-slide {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0;
+  transform: scale(1.02);
+  transition: opacity 700ms ease, transform 5s ease;
 }
-@property --tw-skew-y {
-  syntax: "*";
-  inherits: false;
+.hero-slide.is-active {
+  opacity: 1;
+  transform: scale(1);
+}
+.hero-control {
+  display: grid;
+  width: 2.25rem;
+  height: 2.25rem;
+  place-items: center;
+  border: 1px solid rgb(244 241 234 / 70%);
+  border-radius: 9999px;
+  background: rgb(31 42 40 / 45%);
+  color: var(--color-kai-cream);
+  cursor: pointer;
+}
+.hero-control:hover {
+  background: var(--color-kai-teal);
+  color: var(--color-kai-ink);
+}
+.hero-dot {
+  width: 0.5rem;
+  height: 0.5rem;
+  padding: 0;
+  border-radius: 9999px;
+  background: rgb(244 241 234 / 60%);
+  cursor: pointer;
+}
+.hero-dot[aria-current="true"] {
+  width: 1.25rem;
+  background: var(--color-kai-gold);
+}
+.hero-control:focus-visible, .hero-dot:focus-visible {
+  outline: 2px solid var(--color-kai-cream);
+  outline-offset: 3px;
+}
+.reveal-on-scroll {
+  opacity: 0;
+  transform: translateY(12px);
+  transition: opacity 500ms ease, transform 500ms ease;
+}
+.reveal-on-scroll.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    scroll-behavior: auto !important;
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
 }
 @property --tw-pan-x {
   syntax: "*";
@@ -791,11 +801,6 @@
 @layer properties {
   @supports ((-webkit-hyphens: none) and (not (margin-trim: inline))) or ((-moz-orient: inline) and (not (color:rgb(from red r g b)))) {
     *, ::before, ::after, ::backdrop {
-      --tw-rotate-x: initial;
-      --tw-rotate-y: initial;
-      --tw-rotate-z: initial;
-      --tw-skew-x: initial;
-      --tw-skew-y: initial;
       --tw-pan-x: initial;
       --tw-pan-y: initial;
       --tw-pinch-zoom: initial;
